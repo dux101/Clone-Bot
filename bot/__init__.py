@@ -73,8 +73,8 @@ except KeyError:
 
 try:
     USE_SERVICE_ACCOUNTS = getConfig('USE_SERVICE_ACCOUNTS')
-    if USE_SERVICE_ACCOUNTS.lower() == 'true':
-        USE_SERVICE_ACCOUNTS = True
+    if USE_SERVICE_ACCOUNTS.lower() == 'false':
+        USE_SERVICE_ACCOUNTS = False
     else:
         USE_SERVICE_ACCOUNTS = False
 except KeyError:
